@@ -1,10 +1,10 @@
 <?php
-require_once "./DB_Conn.php";
+require_once "../BDD/DB_Conn.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user_id = $_POST['user_id'];
+    $user_id = $_POST['user _id'];
 
-    $sqlQuery = "DELETE FROM account WHERE A_ID='$user_id'";
+    $sqlQuery = "DELETE FROM champions WHERE id='$user_id'";
     mysqli_query($conn, $sqlQuery);
 
     // Redirection vers la page actuelle après la suppression
