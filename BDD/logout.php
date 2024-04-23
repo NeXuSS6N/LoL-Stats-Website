@@ -1,7 +1,7 @@
 <?php
-
 // Démarre la session
 session_start();
+require_once '../PHP/constList.php';
 
 // Vide les données de la session
 $_SESSION = array();
@@ -21,7 +21,7 @@ if (ini_get("session.use_cookies")) {
 }
 
 // Définit la variable de session "loggedin" sur false
-$_SESSION["loggedin"] = false;
+$_SESSION[LOGGEDIN] = false;
 
 // Détruit la session
 session_destroy();

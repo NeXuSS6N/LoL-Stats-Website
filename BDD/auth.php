@@ -124,9 +124,9 @@ if ($stmt->rowCount() == 1) {
         // \____/ \___|\__| \____/\____/\____/\____/ \___/ \___/\_| \_/
         //------------------------------------
         $_SESSION['user'] = $login;
-        $_SESSION['loggedIn'] = true;
+        $_SESSION['LoggedIn'] = true;
         $_SESSION['login'] = $login;
-        $_SESSION['Id'] = $row['A_Id'];
+        $_SESSION['Id'] = $row['J_Id'];
 
         //------------------------------------
     } else {
@@ -149,7 +149,7 @@ if ($msg != "") {
     header("Location: error.php?msg=" . $msg);
     exit();
 } else {
-    header("Location: login.php");
+    header("Location: ../PHP/login.php");
 }
 //------------------------------------
 

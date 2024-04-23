@@ -1,16 +1,16 @@
 <footer>
     <hr>
-    <a href="../php/accueil.php">Accueil</a>
+    <a href="./accueil.php">Accueil</a>
 
     <?php
     if (isset($_SESSION['login'])) {
         echo '<li></li>';
     } else {
-        echo '<li><a href="../php/login.php">Login</a></li>';
+        echo '<li><a href="./login.php">Login</a></li>';
     }
     ?>
 
-    <a href="../php/logout.php">Logout</a>
+    <a href="../BDD/logout.php">Logout</a>
     <style>
         footer {
             position: fixed;
