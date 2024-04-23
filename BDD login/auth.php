@@ -65,7 +65,7 @@ if (
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'arcade website';
+$dbname = 'lolstats';
 $charset = 'utf8mb4';
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 $options = [
@@ -101,14 +101,14 @@ $msg = "";
 
 $sql = "SELECT *
             FROM account
-            WHERE A_Username = :login";
+            WHERE J_Username = :login";
 $stmt = $pdo_conn->prepare($sql);
 $stmt->bindParam(':login', $login);
 $stmt->execute();
 
 if ($stmt->rowCount() == 1) {
     $row = $stmt->fetch();
-    $pwd_hashed = $row["A_Mdp"];
+    $pwd_hashed = $row["J_Mdp"];
 
 
     // Vérifie si le mot de passe est correct

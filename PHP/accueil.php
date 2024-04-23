@@ -13,9 +13,6 @@ session_start();
 </head>
 
 <body>
-  <?php
-  session_start();
-  ?>
   <nav>
     <div class="nav-content">
       <div class="logo">
@@ -36,20 +33,6 @@ session_start();
       </ul>
     </div>
   </nav>
-
-  <div class="home">
-    <div class="text">
-      <h2>Scoreboard</h2>
-      <select id="jeux">
-        <option value="World Of Warcraft">World Of Warcraft</option>
-        <option value="Souls Breaker">Souls Breaker</option>
-        <option value="League Of Legends">League Of Legends</option>
-      </select>
-      <div id="scoreboard">
-      </div>
-    </div>
-  </div>
-  <script src="../js/scoreboard.js"></script>
   <?php include 'footer.php'; ?>
 </body>
 

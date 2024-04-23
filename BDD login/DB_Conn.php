@@ -10,7 +10,7 @@
     $host = 'localhost';
     $user = 'root';
     $password = '';
-    $dbname = 'arcade website';
+    $dbname = 'lolstats';
 
     $conn = mysqli_connect($host, $user, $password, $dbname);
     

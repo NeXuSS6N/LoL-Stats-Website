@@ -87,7 +87,7 @@ if (
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'arcade website';
+$dbname = 'lolstats';
 $charset = 'utf8mb4';
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 $options = [
@@ -126,8 +126,8 @@ $msg = "";
 
 $sql = "SELECT COUNT(*) AS cnt
             FROM account
-            WHERE A_Username = :login
-            OR A_Mail = :email";
+            WHERE J_Username = :login
+            OR J_Mail = :email";
 $stmt = $pdo_conn->prepare($sql);
 $stmt->bindParam(':login', $login);
 $stmt->bindParam(':email', $email);
@@ -159,7 +159,7 @@ if ($msg != "") {
 $pwd_hashed = $pwd_unhashed ; //password_hash($pwd_unhashed, PASSWORD_DEFAULT);
 
 // Insère l'utilisateur dans la base de données
-$sql = "INSERT INTO account (A_Username, A_Mdp, A_Mail) 
+$sql = "INSERT INTO account (J_Username, J_Mdp, J_Mail) 
             VALUES (:login, :password, :email)";
 $stmt = $pdo_conn->prepare($sql);
 $stmt->bindParam(':login', $login);
