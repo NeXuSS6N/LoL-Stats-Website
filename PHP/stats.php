@@ -39,7 +39,7 @@ foreach ($resultat as $resultats) {
             <?php echo $resultats['banrate'] ?>
         </h5>
         <!-- Formulaire pour modifier les informations de l'utilisateur -->
-        <form method="post" action="../CRUD/update_user.php">
+        <form method="post" action="../CRUD/update_champ.php">
             <input type="hidden" name="user_id" value="<?php echo $resultats['id'] ?>">
             <input type="text" name="new_popularity" placeholder="new new popularity">
             <input type="text" name="new_victory" placeholder="new victory rate">
@@ -47,7 +47,7 @@ foreach ($resultat as $resultats) {
             <button type="submit">Modifier</button>
         </form>
         <!-- Formulaire pour supprimer l'utilisateur -->
-        <form method="post" action="../CRUD/delete_user.php">
+        <form method="post" action="../CRUD/delete_champ.php">
             <input type="hidden" name="user_id" value="<?php echo $resultats['id'] ?>">
             <button type="submit">Supprimer</button>
         </form>
@@ -57,7 +57,7 @@ foreach ($resultat as $resultats) {
 ?>
 
 <!-- Formulaire pour ajouter un nouvel utilisateur -->
-<form method="post" action="../CRUD/add_user.php">
+<form method="post" action="../CRUD/add_champ.php">
     <input type="text" name="name" placeholder="Nom du champion">
     <input type="text" name="popularity" placeholder="Taux de popularité">
     <input type="text" name="victory" placeholder="Taux de victoire">
