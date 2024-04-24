@@ -53,11 +53,11 @@ require_once "../BDD/DB_Conn.php";
         <link rel="stylesheet" href="../css/users.css">
 
         <div class="stats-content">
-            <h5>
-                <?php echo $resultats['name'] ?>
-                <?php echo $resultats['popularity'] ?>
-                <?php echo $resultats['victory'] ?>
-                <?php echo $resultats['banrate'] ?>
+        <h5>
+                <?php echo $resultats['name'] ?> : <p>&nbsp;</p>
+                &nbsp;&nbsp;Popularity:&nbsp; <?php echo $resultats['popularity'] ?> %
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Victory:&nbsp;&nbsp; <?php echo $resultats['victory'] ?> %
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banrate:&nbsp;&nbsp; <?php echo $resultats['banrate'] ?> %
             </h5>
         </div>
         <?php

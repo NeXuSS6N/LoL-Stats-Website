@@ -69,7 +69,7 @@ nav {
     margin: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
-    word-spacing: 30px;
+    /* word-spacing: 30px; */
 }
 
 .stats-content form {
