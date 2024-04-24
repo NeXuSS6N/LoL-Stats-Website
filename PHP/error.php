@@ -2,6 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/error.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <title>Erreur</title>
 </head>
 <body>

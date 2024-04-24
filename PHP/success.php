@@ -9,6 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/success.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <title>Utilisateur ajouté avec succès !</title>
 </head>
 
@@ -16,7 +17,7 @@ session_start();
     <nav>
         <div class="nav-content">
             <div class="logo">
-                <a href="./accueil.php">Lol Stats</a>
+                <a href="./accueil.php">LoL Stats</a>
             </div>
             <ul class="nav-links">
                 <li><a href="./accueil.php">Accueil</a></li>

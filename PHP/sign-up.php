@@ -8,6 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/sign-up.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
   <title>Sign Up</title>
 </head>
 
@@ -16,7 +17,7 @@
   <nav>
     <div class="nav-content">
       <div class="logo">
-        <a href="./accueil.php">Lol Stats</a>
+        <a href="./accueil.php">LoL Stats</a>
       </div>
       <ul class="nav-links">
         <li><a href="./accueil.php">Accueil</a></li>

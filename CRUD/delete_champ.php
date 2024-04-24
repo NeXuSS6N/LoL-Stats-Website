@@ -2,7 +2,7 @@
 require_once "../BDD/DB_Conn.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user_id = $_POST['user _id'];
+    $user_id = $_POST['user_id'];
 
     $sqlQuery = "DELETE FROM champions WHERE id='$user_id'";
     mysqli_query($conn, $sqlQuery);

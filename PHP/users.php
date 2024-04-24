@@ -1,5 +1,7 @@
-<?php session_start();
+<?php
+// session_start(); 
 ?>
+
 <?php if ((isset($_SESSION["LoggedIn"]) === false) || (($_SESSION['Id']) != 999)) {
   echo $_SESSION['Id'];
   header("Location: ./accueil.php");
@@ -20,8 +22,9 @@ $resultat = mysqli_query($conn, $sqlQuery);
 foreach ($resultat as $resultats) {
   ?>
   <link rel="stylesheet" href="../css/users.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
 
-  <div>
+  <div class="user-content">
     <h5>
       <?php echo $resultats['J_Username'] ?>
       <?php echo $resultats['J_Mail'] ?>
@@ -44,7 +47,7 @@ foreach ($resultat as $resultats) {
   <?php
 }
 ?>
-
+<div class="user-content">
 <!-- Formulaire pour ajouter un nouvel utilisateur -->
 <form method="post" action="../CRUD/add_user.php">
   <input type="text" name="username" placeholder="Nom d'utilisateur">

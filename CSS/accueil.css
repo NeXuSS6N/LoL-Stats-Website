@@ -1,0 +1,48 @@
+/* Style de base pour la page d'accueil */
+body {
+    font-family: Arial, sans-serif; /* Utilisation d'une police de caractères par défaut */
+    margin: 0; /* Supprimer les marges par défaut du corps */
+    padding: 0; /* Supprimer le padding par défaut du corps */
+  }
+  
+  /* Style de base pour la barre de navigation */
+  nav {
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+  }
+  
+  .nav-content {
+    display: flex; /* Utiliser le modèle de boîte flexible */
+    justify-content: space-between; /* Espacer les éléments */
+    align-items: center; /* Aligner les éléments verticalement */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo a {
+    color: #fff; /* Couleur du texte du logo */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    font-size: 1.5em; /* Taille de la police du logo */
+  }
+  
+  .nav-links {
+    list-style-type: none; /* Supprimer les puces de liste */
+    margin: 0; /* Supprimer les marges */
+    padding: 0; /* Supprimer le padding */
+  }
+  
+  .nav-links li {
+    display: inline; /* Afficher les éléments de la liste en ligne */
+    margin-right: 20px; /* Espacement entre les éléments de la liste */
+  }
+  
+  .nav-links li a {
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline; /* Souligner les liens au survol */
+  }
