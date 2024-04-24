@@ -8,6 +8,7 @@ body {
     /* Supprimer les rembourrages par défaut */
     background-color: #f5f5f5;
     /* Couleur de fond pour le corps de la page */
+    background-image : url(../assets/backgroundimage.jpg);
 }
 
 /* Style pour la barre de navigation */

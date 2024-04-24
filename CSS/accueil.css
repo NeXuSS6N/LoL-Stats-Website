@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif; /* Utilisation d'une police de caractères par défaut */
     margin: 0; /* Supprimer les marges par défaut du corps */
     padding: 0; /* Supprimer le padding par défaut du corps */
+    background-image : url(../assets/backgroundimage.jpg);
   }
   
   /* Style de base pour la barre de navigation */
