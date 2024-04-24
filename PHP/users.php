@@ -23,6 +23,7 @@ foreach ($resultat as $resultats) {
   ?>
   <link rel="stylesheet" href="../css/users.css">
   <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="icon" type="image/x-icon" href="../assets/LoLStatsIco.png" />
 
   <div class="user-content">
     <h5>

@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../assets/LoLStatsIco.png" />
     <link rel="stylesheet" href="../css/error.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <title>Erreur</title>

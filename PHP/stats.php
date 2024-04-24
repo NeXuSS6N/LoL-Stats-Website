@@ -23,6 +23,7 @@ require_once "../BDD/DB_Conn.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/LoLStatsIco.png" />
     <link rel="stylesheet" href="../CSS/stats.css">
     <style>
         /* Style de base pour le footer */
@@ -98,8 +99,10 @@ require_once "../BDD/DB_Conn.php";
             <h5>
                 <?php echo $resultats['name'] ?> : <p>&nbsp;</p>
                 &nbsp;&nbsp;Popularity:&nbsp; <?php echo $resultats['popularity'] ?> %
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Victory:&nbsp;&nbsp; <?php echo $resultats['victory'] ?> %
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banrate:&nbsp;&nbsp; <?php echo $resultats['banrate'] ?> %
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Victory:&nbsp;&nbsp;
+                <?php echo $resultats['victory'] ?> %
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Banrate:&nbsp;&nbsp;
+                <?php echo $resultats['banrate'] ?> %
             </h5>
             <!-- Formulaire pour modifier les informations de l'utilisateur -->
             <form method="post" action="../CRUD/update_champ.php">
