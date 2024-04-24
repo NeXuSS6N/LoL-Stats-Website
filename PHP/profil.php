@@ -40,17 +40,16 @@ if (isset($_SESSION["LoggedIn"])) {
   </nav>
   <div class="profil">
     <div class="profil-text">
+    <div class="profil-image">
+        <img src="../assets/default.png">
+      </div>
       <h2>Profil de
         <?php echo $_SESSION['login']; ?>
       </h2>
       <?php if ($_SESSION['Id'] === 999): ?>
 
         <?php require_once "./users.php" ?>
-      <?php endif; ?>
-
-      <div class="profil-image">
-        <img src="../assets/default.png">
-      </div>
+      <?php endif; ?> 
     </div>
   </div>
   <?php include './footer.php'; ?>
