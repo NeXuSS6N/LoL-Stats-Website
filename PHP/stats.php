@@ -96,15 +96,15 @@ require_once "../BDD/DB_Conn.php";
 
         <div class="stats-content">
             <h5>
-                <?php echo $resultats['name']  ?> 
-                <?php echo $resultats['popularity'] ?>
-                <?php echo $resultats['victory'] ?>
-                <?php echo $resultats['banrate']  ?>
+                <?php echo $resultats['name']  ?>  :
+               Popularity: <?php echo $resultats['popularity'] ?> %
+                Victory: <?php echo $resultats['victory'] ?> %
+                Banrate: <?php echo $resultats['banrate']  ?> %
             </h5>
             <!-- Formulaire pour modifier les informations de l'utilisateur -->
             <form method="post" action="../CRUD/update_champ.php">
                 <input type="hidden" name="user_id" value="<?php echo $resultats['id'] ?>">
-                <input type="text" name="new_popularity" placeholder="new new popularity">
+                <input type="text" name="new_popularity" placeholder="new popularity">
                 <input type="text" name="new_victory" placeholder="new victory rate">
                 <input type="text" name="new_banrate" placeholder="new banrate">
                 <button type="submit">Modifier</button>
