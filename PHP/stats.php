@@ -5,7 +5,7 @@ session_start();
 
 <?php
 if (
-    (isset($_SESSION['LoggedIn']) === false) ||
+    (isset($_SESSION[LOGGEDIN]) === false) ||
     (
         isset($_SESSION['Id']) &&
         $_SESSION['Id'] != 999)
